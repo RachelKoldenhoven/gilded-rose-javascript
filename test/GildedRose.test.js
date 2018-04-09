@@ -120,6 +120,6 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
         item.tick();
 
         expect(item.quality).to.equal(0);
-        expect(item.daysRemaining).to.equal(11);
+        expect(item.daysRemaining).to.equal(-2);
     })
 })
