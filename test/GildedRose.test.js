@@ -91,7 +91,7 @@ describe('Aged Brie', () => {
 })
 
 describe('Backstage passes to a TAFKAL80ETC concert', () => {
-    it('something', () => {
+    it('get better fast', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 10, 5);
         item.tick();
 
