@@ -57,7 +57,7 @@ describe('Sulfuras, Hand of Ragnaros', () => {
 })
 
 describe('Aged Brie', () => {
-    it('something', () => {
+    it('Quality goes up', () => {
         const item = new GildedRose('Aged Brie', 10, 5);
         item.tick();
 
@@ -65,7 +65,7 @@ describe('Aged Brie', () => {
         expect(item.daysRemaining).to.equal(4);
     })
 
-    it('somethingxxx', () => {
+    it('Is never better than 50', () => {
         const item = new GildedRose('Aged Brie', 50, 5);
         item.tick();
 
@@ -81,7 +81,7 @@ describe('Aged Brie', () => {
         expect(item.daysRemaining).to.equal(-2);
     })
 
-    it('lijelwe', () => {
+    it('gets better faster', () => {
         const item = new GildedRose('Aged Brie', 40, -1);
         item.tick();
 
