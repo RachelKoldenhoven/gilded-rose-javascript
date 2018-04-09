@@ -99,7 +99,7 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
         expect(item.daysRemaining).to.equal(4);
     })
 
-    it('sosssmething', () => {
+    it('Never better than 50', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 49, 5);
         item.tick();
 
@@ -107,7 +107,7 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
         expect(item.daysRemaining).to.equal(4);
     })
 
-    it('sosssmethingvvv', () => {
+    it('maxes out at 50', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 49, 12);
         item.tick();
 
@@ -115,7 +115,7 @@ describe('Backstage passes to a TAFKAL80ETC concert', () => {
         expect(item.daysRemaining).to.equal(11);
     })
 
-    it('dmnsm', () => {
+    it('useless after show', () => {
         const item = new GildedRose('Backstage passes to a TAFKAL80ETC concert', 49, -1);
         item.tick();
 
